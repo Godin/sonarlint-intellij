@@ -36,6 +36,10 @@ intellij {
   intellij.alternativeIdePath = '/Applications/CLion.app'
 }
 
+project.afterEvaluate {
+  project.tasks.runIdea.maxHeapSize = "2048m"
+}
+
 repositories {
   jcenter()
   mavenLocal()
